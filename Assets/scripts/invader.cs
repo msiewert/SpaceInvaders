@@ -21,6 +21,10 @@ public class Invader : MonoBehaviour
     private void AnimateSprite()
     {
         _animationFrame++;
-
+        if (_animationFrame >= this.animationSprites.Length)
+        {
+            _animationFrame = 0;
+        }
+        _spriteRenderer.sprite = this.animationSprites[_animationFrame];
     }
 }
