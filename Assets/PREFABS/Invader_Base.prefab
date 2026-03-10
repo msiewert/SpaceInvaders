@@ -152,4 +152,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Invader
   animationSprites: []
-  animationTime: 0.1
+  animationTime: 0.5
