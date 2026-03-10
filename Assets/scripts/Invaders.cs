@@ -13,7 +13,7 @@ public class Invaders : MonoBehaviour
         {
             for (int column = 0; column < this.columns; column++)
             {
-                Instantiate(this.prefabs[row], this.transform);
+                Invader invader = Instantiate(this.prefabs[row], this.transform);
             }
         }
     }
