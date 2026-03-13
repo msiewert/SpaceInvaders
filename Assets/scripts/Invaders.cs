@@ -5,7 +5,8 @@ public class Invaders : MonoBehaviour
     public Invader[] prefabs;
     public int rows = 5;
     public int columns = 11;
-
+    public float speed = 3.0f;
+    private Vector3 _direction = Vector3.right;
 
     private void Awake()
     {
@@ -20,10 +21,40 @@ public class Invaders : MonoBehaviour
                 Invader invader = Instantiate(this.prefabs[row], this.transform);
                 Vector3 position = rowPosition;
                 position.x += column * 2.0f;
-                invader.transform.position = position;
+                invader.transform.localPosition = position;
             }
 
         }
     }
+    private void Update()
+    {
+        this.transform.position += this._direction * this.speed * Time.deltaTime;
+        Vector3 leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
+        Vector3 rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
+        foreach (Transform invader in this.transform)
+        {
+            if (!invader.gameObject.activeInHierarchy)
+            {
+                continue;
+            }
+            if (_direction == Vector3.right && invader.position.x >= (rightEdge.x - 1.0f))
+            {
+                AdvanceRow();
 
+            }
+            else if (_direction == Vector3.left && invader.position.x <= (leftEdge.x + 1.0f))
+            {
+                AdvanceRow();
+
+            }
+
+        }
+    }
+    private void AdvanceRow()
+    {
+        this._direction *= -1.0f;
+        Vector3 position = this.transform.position;
+        position.y -= 1.0f;
+        this.transform.position = position;
+    }
 }
