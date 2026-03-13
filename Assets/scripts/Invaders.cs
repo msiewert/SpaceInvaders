@@ -11,7 +11,10 @@ public class Invaders : MonoBehaviour
     {
         for (int row = 0; row < this.rows; row++)
         {
-            Vector3 rowPosition = new Vector3(0.0f, row * 2.0f, 0.0f);
+            float width = 2.0f * (this.columns - 1);
+            float height = 2.0f * (this.rows - 1);
+            Vector2 centering = new Vector2(-width / 2.0f, -height / 2.0f);
+            Vector3 rowPosition = new Vector3(centering.x, centering.y + row * 2.0f, 0.0f);
             for (int column = 0; column < this.columns; column++)
             {
                 Invader invader = Instantiate(this.prefabs[row], this.transform);
