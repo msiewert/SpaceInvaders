@@ -32,6 +32,6 @@ public class Player : MonoBehaviour
     }
     private void LaserDestroyed()
     {
-
+        _laseractive = false;
     }
 }

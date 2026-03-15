@@ -1007,7 +1007,30 @@ MonoBehaviour:
   - {fileID: 2018899529809527823, guid: b45df4264c4db83439972f01989a6f2e, type: 3}
   rows: 5
   columns: 11
-  speed: 1
+  speed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.25
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 8
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1203705679
 Transform:
   m_ObjectHideFlags: 0
@@ -1251,7 +1274,7 @@ GameObject:
   - component: {fileID: 1698129605}
   - component: {fileID: 1698129604}
   - component: {fileID: 1698129607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
