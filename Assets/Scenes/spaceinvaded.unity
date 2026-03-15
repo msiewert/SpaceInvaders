@@ -1391,6 +1391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 5
+  laserPrefab: {fileID: 4183770721901594112, guid: c3a8ab02d02b5ae4ca92d1d47127ea63, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

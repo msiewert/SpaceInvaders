@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2253123636308550339}
   - component: {fileID: 3623853740869775948}
   - component: {fileID: 4962172094049565784}
+  - component: {fileID: 4183770721901594112}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -138,3 +139,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.125, y: 0.375}
   m_EdgeRadius: 0
+--- !u!114 &4183770721901594112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7288462717710527137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84ba857d8f6f0d4ea84c4d1a9bd02f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
+  direction: {x: 0, y: 1, z: 0}
+  speed: 30

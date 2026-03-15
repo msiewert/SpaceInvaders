@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 5.0f;
+    private bool _laseractive;
     public Projectile laserPrefab;
     private void Update()
     {
@@ -14,7 +15,7 @@ public class Player : MonoBehaviour
         {
             this.transform.position += Vector3.right * speed * Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             Shoot();
         }
@@ -22,6 +23,15 @@ public class Player : MonoBehaviour
     }
     private void Shoot()
     {
-        Instantiate(this.laserPrefab, this.transform.position, Quaternion.identity);
+        if (!_laseractive)
+        {
+            Projectile projectile = Instantiate(this.laserPrefab, this.transform.position, Quaternion.identity);
+            projectile.destroyed += LaserDestroyed;
+            _laseractive = true;
+        }
+    }
+    private void LaserDestroyed()
+    {
+
     }
 }
