@@ -38,7 +38,7 @@ public class Invaders : MonoBehaviour
     }
     private void Start()
     {
-        InvokeRepeating(nameof(missileAttack), this.missileAttackRate, this.missileAttackRate);
+        InvokeRepeating(nameof(MissileAttack), this.missileAttackRate, this.missileAttackRate);
     }
     private void Update()
     {
@@ -85,7 +85,7 @@ public class Invaders : MonoBehaviour
             }
             if (Random.value < (1.0f / (float)this.amountAlive))
             {
-                Instansiate(this.missilePrefab, invader.position, Qaunterion.identity);
+                Instantiate(this.missilePrefab, invader.position, Quaternion.identity);
                 break;
             }
 
