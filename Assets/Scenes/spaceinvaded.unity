@@ -130,6 +130,8 @@ GameObject:
   - component: {fileID: 228768236}
   - component: {fileID: 228768235}
   - component: {fileID: 228768234}
+  - component: {fileID: 228768237}
+  - component: {fileID: 228768238}
   m_Layer: 0
   m_Name: Bunker
   m_TagString: Untagged
@@ -257,6 +259,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &228768237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228768233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e59cb4585021d4ebce05035cc6af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bunker
+--- !u!50 &228768238
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 228768233}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &324584636
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +309,8 @@ GameObject:
   - component: {fileID: 324584639}
   - component: {fileID: 324584638}
   - component: {fileID: 324584637}
+  - component: {fileID: 324584640}
+  - component: {fileID: 324584641}
   m_Layer: 0
   m_Name: Bunker
   m_TagString: Untagged
@@ -395,6 +438,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &324584640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324584636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e59cb4585021d4ebce05035cc6af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bunker
+--- !u!50 &324584641
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324584636}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +625,8 @@ GameObject:
   - component: {fileID: 583587039}
   - component: {fileID: 583587038}
   - component: {fileID: 583587037}
+  - component: {fileID: 583587040}
+  - component: {fileID: 583587041}
   m_Layer: 0
   m_Name: Bunker
   m_TagString: Untagged
@@ -670,6 +754,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &583587040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583587036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e59cb4585021d4ebce05035cc6af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bunker
+--- !u!50 &583587041
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583587036}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,8 +1134,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0.25
+      time: 0.033309758
+      value: 1.0015804
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1020,13 +1143,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 1.0335083
-      value: 5.8779755
-      inSlope: 2
-      outSlope: 2
+      time: 1.2862175
+      value: 5.662831
+      inSlope: 16.593332
+      outSlope: 16.593332
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.016306859
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1059,6 +1182,8 @@ GameObject:
   - component: {fileID: 1218016373}
   - component: {fileID: 1218016372}
   - component: {fileID: 1218016371}
+  - component: {fileID: 1218016374}
+  - component: {fileID: 1218016375}
   m_Layer: 0
   m_Name: Bunker
   m_TagString: Untagged
@@ -1186,6 +1311,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1218016374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218016370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e59cb4585021d4ebce05035cc6af9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bunker
+--- !u!50 &1218016375
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218016370}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1350204714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1276,6 +1440,7 @@ GameObject:
   - component: {fileID: 1698129605}
   - component: {fileID: 1698129604}
   - component: {fileID: 1698129607}
+  - component: {fileID: 1698129608}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -1417,6 +1582,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player
   speed: 5
   laserPrefab: {fileID: 4183770721901594112, guid: c3a8ab02d02b5ae4ca92d1d47127ea63, type: 3}
+--- !u!50 &1698129608
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698129603}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
