@@ -52,6 +52,7 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Invaders.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Bunker.cs" />
     <Compile Include="Assets\Scripts\invader.cs" />
   </ItemGroup>
   <ItemGroup>
